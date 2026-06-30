@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Candidate Intelligence Platform
+#  Candidate Data Parser
 
 ### Turning fragmented candidate data into one trustworthy golden record
 
