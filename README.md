@@ -4,7 +4,6 @@
 
 ### Turning fragmented candidate data into one trustworthy golden record
 
-*Built for the Eightfold Engineering Intern Assignment*
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -379,12 +378,11 @@ This project is licensed under the **MIT License**. It was built as part of the 
 
 **Kaviyadharshini**
 
-[![Email](https://img.shields.io/badge/Email-kaviyadharshini.works%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:kaviyadharshini.works@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-kaviyadharshini2805-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kaviyadharshini2805)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kaviyadharshini--works-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaviyadharshini-works)
+**Email:** kaviyadharshini.works@gmail.com
 
-*Built with care for the Eightfold Engineering Intern Assignment.*
+**GitHub:** https://github.com/kaviyadharshini2805
 
+**LinkedIn:** https://www.linkedin.com/in/kaviyadharshini-works
 </div>
 
 ---
