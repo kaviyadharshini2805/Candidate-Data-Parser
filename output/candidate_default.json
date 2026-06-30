@@ -1,6 +1,6 @@
 [
   {
-    "candidate_id": "060086ff-8795-4c9f-ae25-71aada4ff3a0",
+    "candidate_id": "20d80825-6e5e-4194-9c38-5d3d5096176d",
     "full_name": "Aarav Sharma",
     "emails": [
       "aarav.sharma@gmail.com"
@@ -23,84 +23,7 @@
     "years_experience": null,
     "skills": [
       {
-        "name": "NLP",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Kubernetes",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Docker",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "MongoDB",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "FastAPI",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Pandas",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "TensorFlow",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Redis",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "React",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Python",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
         "name": "PostgreSQL",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "C++",
         "confidence": 0.6,
         "sources": [
           "Aarav_Sharma_Resume.pdf"
@@ -121,7 +44,28 @@
         ]
       },
       {
+        "name": "AWS",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "FastAPI",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
         "name": "NumPy",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "TensorFlow",
         "confidence": 0.6,
         "sources": [
           "Aarav_Sharma_Resume.pdf"
@@ -135,6 +79,34 @@
         ]
       },
       {
+        "name": "Python",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "Redis",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
         "name": "Java",
         "confidence": 0.6,
         "sources": [
@@ -142,7 +114,35 @@
         ]
       },
       {
-        "name": "AWS",
+        "name": "MongoDB",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "Pandas",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "C++",
+        "confidence": 0.6,
+        "sources": [
+          "Aarav_Sharma_Resume.pdf"
+        ]
+      },
+      {
+        "name": "NLP",
         "confidence": 0.6,
         "sources": [
           "Aarav_Sharma_Resume.pdf"
@@ -295,7 +295,7 @@
       {
         "source_name": "sample_data.json",
         "content_type": "json",
-        "parse_time_ms": 2.65,
+        "parse_time_ms": 1.65,
         "emails_found": 0,
         "phones_found": 0,
         "skills_found": 0,
@@ -322,7 +322,7 @@
       {
         "source_name": "Aarav_Sharma_Resume.pdf",
         "content_type": "pdf",
-        "parse_time_ms": 66.62,
+        "parse_time_ms": 87.79,
         "emails_found": 1,
         "phones_found": 1,
         "skills_found": 19,
