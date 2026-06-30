@@ -187,15 +187,14 @@ flowchart LR
 
 ## ️ Screenshots
 
-> [!NOTE]
-> Replace these placeholders with real screenshots saved under `assets/`.
+# 1) Candidate Data Input Dashboard
+<img width="1918" height="976" alt="image" src="https://github.com/user-attachments/assets/b2239fdf-f321-4065-92d1-33aaba92fcd1" />
 
-| File | Description |
-|---|---|
-| `assets/dashboard.png` | Overview of the Streamlit dashboard home screen with upload panel and pipeline status. |
-| `assets/upload.png` | File upload flow showing multiple source types being added for a single candidate. |
-| `assets/provenance.png` | Field-by-field provenance view showing source and confidence per field. |
-| `assets/output.png` | Final canonical JSON output panel with confidence scores highlighted. |
+# 2) Golden Candidate Profile (Default Output)
+<img width="1920" height="976" alt="image" src="https://github.com/user-attachments/assets/1d586114-8e04-4497-bb5a-ab516bd26cbe" />
+
+# 3) Sample Output
+<img width="671" height="852" alt="image" src="https://github.com/user-attachments/assets/45f97529-b58a-4b7a-8632-73f9fe5ce722" />
 
 ---
 
