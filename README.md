@@ -108,10 +108,6 @@ Which produces something like:
 
 Upload files, watch the pipeline run step by step, inspect the canonical and projected outputs side by side, check confidence scores, compare sources, tweak the projection config, export to JSON/PDF, and toggle dark mode if that's your thing.
 
-## A few honest notes
-
-This was built as an assignment, so some things are intentionally out of scope: no live LinkedIn scraping (rate limits and ToS issues), no cloud database (everything's in-memory), and no custom ML training — entity matching relies on deterministic rules and fuzzy string matching (RapidFuzz) rather than a trained model. Email and phone number are treated as the primary identity keys, and conflict resolution follows fixed priority rules rather than learned ones.
-
 ## Try it live
 
 [Live demo on Streamlit](https://candidate-intelligence-platform-nth6plavdpzorspnfpyxtr.streamlit.app/)
