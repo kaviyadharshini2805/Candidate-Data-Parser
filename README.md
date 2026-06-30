@@ -15,7 +15,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](#-license)
 
 
-**[Live Demo](https://candidate-data-parser-ccfmmpvpcegjxybexrnxgs.streamlit.app/))** · **[Report Bug](https://github.com/kaviyadharshini2805/Candidate-Intelligence-Platform/issues)** · **[Request Feature](https://github.com/kaviyadharshini2805/Candidate-Intelligence-Platform/issues)**
+**[Live Demo](https://candidate-data-parser-ccfmmpvpcegjxybexrnxgs.streamlit.app/)**  ·  **[Report Bug](https://github.com/kaviyadharshini2805/Candidate-Intelligence-Platform/issues)**  ·  **[Request Feature](https://github.com/kaviyadharshini2805/Candidate-Intelligence-Platform/issues)**
 
 </div>
 
