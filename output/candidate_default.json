@@ -1,17 +1,13 @@
 [
   {
-    "candidate_id": "20d80825-6e5e-4194-9c38-5d3d5096176d",
-    "full_name": "Aarav Sharma",
-    "emails": [
-      "aarav.sharma@gmail.com"
-    ],
-    "phones": [
-      "+919876543210"
-    ],
+    "candidate_id": "6c5778f1-7edf-4413-8444-9e84a8948ec4",
+    "full_name": "Noida India",
+    "emails": [],
+    "phones": [],
     "location": [
-      "Bengaluru",
       null,
-      "IN"
+      null,
+      null
     ],
     "links": {
       "linkedin": null,
@@ -19,268 +15,15 @@
       "portfolio": null,
       "other": []
     },
-    "headline": "Software Engineer with 4+ years of experience in backend development, scalable systems, cloud computing, and AI-powered applications. Technical Skills Python, Java, C++, JavaScript, FastAPI, Flask, Django, React, PostgreSQL, MongoDB, AWS, GCP, Docker, Kubernetes, TensorFlow, Pandas, NumPy Professional Experience Google — Software Engineer (Jul 2023–Present) Designed scalable backend microservices, worked on AI infrastructure, mentored engineers. Infosys — Software Engineer (Jul 2021–Jun 2023) Built REST APIs with FastAPI, optimized PostgreSQL queries, integrated Redis caching.",
+    "headline": null,
     "years_experience": null,
-    "skills": [
-      {
-        "name": "PostgreSQL",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Flask",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "AWS",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "FastAPI",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "NumPy",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "TensorFlow",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "GCP",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Python",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Docker",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Redis",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Kubernetes",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Java",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "MongoDB",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Pandas",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "React",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "C++",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "NLP",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      },
-      {
-        "name": "Django",
-        "confidence": 0.6,
-        "sources": [
-          "Aarav_Sharma_Resume.pdf"
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "Google — Software Engineer (Jul 2023–Present)",
-        "title": "Unknown Title",
-        "start": null,
-        "end": null,
-        "summary": "Designed scalable backend microservices, worked on AI infrastructure, mentored engineers. Infosys — Software Engineer (Jul 2021–Jun 2023) Built REST APIs with FastAPI, optimized PostgreSQL queries, integrated Redis caching."
-      }
-    ],
-    "education": [
-      {
-        "institution": "Unknown Institution",
-        "degree": "B.Tech",
-        "field": "Computer Science and Engineeri",
-        "end_year": 2021
-      }
-    ],
+    "skills": [],
+    "experience": [],
+    "education": [],
     "provenance": [
       {
         "field": "full_name",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "headline",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "emails",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "phones",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "location.city",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "location.country",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "experience.company",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "experience.title",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "experience.summary",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "education.institution",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "education.degree",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "education.field",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "education.end_year",
-        "source": "Aarav_Sharma_Resume.pdf",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      },
-      {
-        "field": "skills",
-        "source": "Aarav_Sharma_Resume.pdf",
+        "source": "recruiter_notes.txt",
         "method": "regex_heuristics",
         "decision_reason": null,
         "match_type": null,
@@ -288,60 +31,34 @@
       }
     ],
     "overall_confidence": 0.6,
-    "validation_warnings": [],
-    "data_quality_score": 0.9,
+    "validation_warnings": [
+      "Validation Warning: Candidate profile has no contact information (emails and phones are empty)."
+    ],
+    "data_quality_score": 0.05,
     "merge_conflicts": [],
     "parse_diagnostics": [
       {
-        "source_name": "sample_data.json",
-        "content_type": "json",
-        "parse_time_ms": 1.65,
+        "source_name": "recruiter_notes.txt",
+        "content_type": "txt",
+        "parse_time_ms": 0.36,
         "emails_found": 0,
         "phones_found": 0,
         "skills_found": 0,
         "experience_count": 0,
-        "education_count": 1,
-        "links_found": 0,
-        "has_name": false,
-        "has_headline": false,
-        "sections_found": [
-          "education"
-        ],
-        "sections_missing": [
-          "name",
-          "emails",
-          "phones",
-          "skills",
-          "experience",
-          "links",
-          "headline"
-        ],
-        "parser_confidence": 1.0,
-        "error": null
-      },
-      {
-        "source_name": "Aarav_Sharma_Resume.pdf",
-        "content_type": "pdf",
-        "parse_time_ms": 87.79,
-        "emails_found": 1,
-        "phones_found": 1,
-        "skills_found": 19,
-        "experience_count": 1,
-        "education_count": 1,
+        "education_count": 0,
         "links_found": 0,
         "has_name": true,
-        "has_headline": true,
-        "sections_found": [
+        "has_headline": false,
+        "sections_found": [],
+        "sections_missing": [
+          "name",
           "emails",
           "phones",
           "skills",
           "experience",
           "education",
+          "links",
           "headline"
-        ],
-        "sections_missing": [
-          "name",
-          "links"
         ],
         "parser_confidence": 0.6,
         "error": null

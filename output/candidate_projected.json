@@ -1,57 +1,13 @@
 {
-  "candidate_name": "Aarav Sharma",
-  "primary_email": "aarav.sharma@gmail.com",
-  "phone_e164": "+919876543210",
-  "skills_list": [
-    "PostgreSQL",
-    "JavaScript",
-    "Flask",
-    "AWS",
-    "FastAPI",
-    "NumPy",
-    "TensorFlow",
-    "GCP",
-    "Python",
-    "Docker",
-    "Redis",
-    "Kubernetes",
-    "Java",
-    "MongoDB",
-    "Pandas",
-    "React",
-    "C++",
-    "NLP",
-    "Django"
-  ],
+  "candidate_name": "Noida India",
+  "primary_email": null,
+  "phone_e164": null,
+  "skills_list": null,
   "overall_confidence": 0.6,
   "provenance": [
     {
       "field": "candidate_name",
-      "source": "Aarav_Sharma_Resume.pdf",
-      "method": "regex_heuristics",
-      "decision_reason": null,
-      "match_type": null,
-      "confidence_score": null
-    },
-    {
-      "field": "primary_email",
-      "source": "Aarav_Sharma_Resume.pdf",
-      "method": "regex_heuristics",
-      "decision_reason": null,
-      "match_type": null,
-      "confidence_score": null
-    },
-    {
-      "field": "phone_e164",
-      "source": "Aarav_Sharma_Resume.pdf",
-      "method": "regex_heuristics",
-      "decision_reason": null,
-      "match_type": null,
-      "confidence_score": null
-    },
-    {
-      "field": "skills_list",
-      "source": "Aarav_Sharma_Resume.pdf",
+      "source": "recruiter_notes.txt",
       "method": "regex_heuristics",
       "decision_reason": null,
       "match_type": null,

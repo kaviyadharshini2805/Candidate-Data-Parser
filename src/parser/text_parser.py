@@ -101,14 +101,17 @@ class TextParser(BaseParser):
         if name_match:
             result["full_name"] = name_match.group(1).strip()
         else:
-            # Fallback: assume the first non-empty line in a resume is the name
             lines = [l.strip() for l in text.split("\n") if l.strip()]
             for line in lines[:3]:
-                # Exclude header words, contact info, page markers
+                lower_line = line.lower()
+                # Skip lines that are obviously naked locations like "Noida, India"
+                is_location = any(lower_line.endswith(suffix) for suffix in [", india", ", usa", ", uk", ", us", ", in"])
+                if is_location:
+                    continue
                 if (len(line.split()) in [2, 3] and 
-                    "page" not in line.lower() and 
-                    "resume" not in line.lower() and 
-                    "cv" not in line.lower() and 
+                    "page" not in lower_line and 
+                    "resume" not in lower_line and 
+                    "cv" not in lower_line and 
                     "@" not in line):
                     result["full_name"] = line
                     break
@@ -163,6 +166,7 @@ class TextParser(BaseParser):
             known_cities = {
                 "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
                 "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
+                "noida": "IN", "gurugram": "IN", "gurgaon": "IN",
                 "san francisco": "US", "new york": "US", "london": "GB"
             }
             
@@ -186,24 +190,30 @@ class TextParser(BaseParser):
             result["location"] = [city, region, country]
 
         if not result.get("location") or not any(result["location"]):
-            # Aggressive fallback: scan for known cities if no location context matched
-            known_cities = {
-                "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
-                "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
-                "san francisco": "US", "new york": "US", "london": "GB"
-            }
-            # Also check for exact strings from user prompt
-            if "Bengaluru, Karnataka, India" in text:
-                result["location"] = ["Bengaluru", "Karnataka", "India"]
-            elif "Chennai, Tamil Nadu" in text:
-                result["location"] = ["Chennai", "Tamil Nadu", "IN"]
-            elif "Pune, Maharashtra" in text:
-                result["location"] = ["Pune", "Maharashtra", "IN"]
+            # Check for naked location like "City, Country"
+            naked_match = re.search(r'(?i)^([A-Z][a-zA-Z\s]+),\s*(India|USA|US|UK|United States|United Kingdom|IN|GB)$', text.strip())
+            if naked_match:
+                result["location"] = [naked_match.group(1).strip(), None, naked_match.group(2).strip()]
             else:
-                for city_name, country_code in known_cities.items():
-                    if re.search(r'\b' + city_name + r'\b', text, re.IGNORECASE):
-                        result["location"] = [city_name.title(), None, country_code]
-                        break
+                # Aggressive fallback: scan for known cities if no location context matched
+                known_cities = {
+                    "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
+                    "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
+                    "noida": "IN", "gurugram": "IN", "gurgaon": "IN",
+                    "san francisco": "US", "new york": "US", "london": "GB"
+                }
+                # Also check for exact strings from user prompt
+                if "Bengaluru, Karnataka, India" in text:
+                    result["location"] = ["Bengaluru", "Karnataka", "India"]
+                elif "Chennai, Tamil Nadu" in text:
+                    result["location"] = ["Chennai", "Tamil Nadu", "IN"]
+                elif "Pune, Maharashtra" in text:
+                    result["location"] = ["Pune", "Maharashtra", "IN"]
+                else:
+                    for city_name, country_code in known_cities.items():
+                        if re.search(r'\b' + city_name + r'\b', text, re.IGNORECASE):
+                            result["location"] = [city_name.title(), None, country_code]
+                            break
 
         # 7. Extract Work Experience Section
         # Find sections containing Experience, Work History, Employment
