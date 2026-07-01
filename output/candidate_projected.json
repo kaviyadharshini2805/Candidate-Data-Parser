@@ -1,17 +1,8 @@
 {
-  "candidate_name": "Noida India",
+  "candidate_name": "Unknown Candidate",
   "primary_email": null,
   "phone_e164": null,
   "skills_list": null,
-  "overall_confidence": 0.6,
-  "provenance": [
-    {
-      "field": "candidate_name",
-      "source": "recruiter_notes.txt",
-      "method": "regex_heuristics",
-      "decision_reason": null,
-      "match_type": null,
-      "confidence_score": null
-    }
-  ]
+  "overall_confidence": 1.0,
+  "provenance": []
 }

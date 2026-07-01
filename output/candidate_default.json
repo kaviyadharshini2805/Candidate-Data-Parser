@@ -1,7 +1,7 @@
 [
   {
-    "candidate_id": "6c5778f1-7edf-4413-8444-9e84a8948ec4",
-    "full_name": "Noida India",
+    "candidate_id": "e41304d3-05a7-4ca7-a474-2edcf9217a95",
+    "full_name": "Unknown Candidate",
     "emails": [],
     "phones": [],
     "location": [
@@ -20,34 +20,25 @@
     "skills": [],
     "experience": [],
     "education": [],
-    "provenance": [
-      {
-        "field": "full_name",
-        "source": "recruiter_notes.txt",
-        "method": "regex_heuristics",
-        "decision_reason": null,
-        "match_type": null,
-        "confidence_score": null
-      }
-    ],
-    "overall_confidence": 0.6,
+    "provenance": [],
+    "overall_confidence": 1.0,
     "validation_warnings": [
       "Validation Warning: Candidate profile has no contact information (emails and phones are empty)."
     ],
-    "data_quality_score": 0.05,
+    "data_quality_score": 0.0,
     "merge_conflicts": [],
     "parse_diagnostics": [
       {
         "source_name": "recruiter_notes.txt",
         "content_type": "txt",
-        "parse_time_ms": 0.36,
+        "parse_time_ms": 0.49,
         "emails_found": 0,
         "phones_found": 0,
         "skills_found": 0,
         "experience_count": 0,
         "education_count": 0,
         "links_found": 0,
-        "has_name": true,
+        "has_name": false,
         "has_headline": false,
         "sections_found": [],
         "sections_missing": [

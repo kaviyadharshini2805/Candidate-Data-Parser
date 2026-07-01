@@ -8,6 +8,16 @@ class TextParser(BaseParser):
     Heuristics and Regex-based parser for unstructured text sources (PDF, DOCX, Notes TXT).
     Assigns lower extraction confidence (e.g., 0.6) compared to structured sources.
     """
+    _KNOWN_CITIES = {
+        "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
+        "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
+        "noida": "IN", "gurugram": "IN", "gurgaon": "IN", "kolkata": "IN",
+        "san francisco": "US", "new york": "US", "london": "GB",
+        "los angeles": "US", "chicago": "US", "seattle": "US", "boston": "US",
+        "austin": "US", "toronto": "CA", "vancouver": "CA", "sydney": "AU",
+        "melbourne": "AU", "berlin": "DE", "paris": "FR", "tokyo": "JP"
+    }
+
     def parse(self, payload: RawPayload) -> Dict[str, Any]:
         text = payload.content if isinstance(payload.content, str) else ""
         
@@ -106,7 +116,7 @@ class TextParser(BaseParser):
                 lower_line = line.lower()
                 # Skip lines that are obviously naked locations like "Noida, India"
                 is_location = any(lower_line.endswith(suffix) for suffix in [", india", ", usa", ", uk", ", us", ", in"])
-                if is_location:
+                if is_location or lower_line in self._KNOWN_CITIES:
                     continue
                 if (len(line.split()) in [2, 3] and 
                     "page" not in lower_line and 
@@ -163,12 +173,6 @@ class TextParser(BaseParser):
                 
         if extracted_loc:
             parts = [p.strip() for p in extracted_loc.split(',')]
-            known_cities = {
-                "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
-                "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
-                "noida": "IN", "gurugram": "IN", "gurgaon": "IN",
-                "san francisco": "US", "new york": "US", "london": "GB"
-            }
             
             city = parts[0]
             region = None
@@ -183,9 +187,9 @@ class TextParser(BaseParser):
                     country = parts[1]
                 else:
                     region = parts[1]
-                    country = known_cities.get(city.lower(), None)
+                    country = self._KNOWN_CITIES.get(city.lower(), None)
             else:
-                country = known_cities.get(city.lower(), None)
+                country = self._KNOWN_CITIES.get(city.lower(), None)
                 
             result["location"] = [city, region, country]
 
@@ -196,12 +200,6 @@ class TextParser(BaseParser):
                 result["location"] = [naked_match.group(1).strip(), None, naked_match.group(2).strip()]
             else:
                 # Aggressive fallback: scan for known cities if no location context matched
-                known_cities = {
-                    "chennai": "IN", "bengaluru": "IN", "bangalore": "IN",
-                    "hyderabad": "IN", "pune": "IN", "mumbai": "IN", "delhi": "IN",
-                    "noida": "IN", "gurugram": "IN", "gurgaon": "IN",
-                    "san francisco": "US", "new york": "US", "london": "GB"
-                }
                 # Also check for exact strings from user prompt
                 if "Bengaluru, Karnataka, India" in text:
                     result["location"] = ["Bengaluru", "Karnataka", "India"]
@@ -210,7 +208,7 @@ class TextParser(BaseParser):
                 elif "Pune, Maharashtra" in text:
                     result["location"] = ["Pune", "Maharashtra", "IN"]
                 else:
-                    for city_name, country_code in known_cities.items():
+                    for city_name, country_code in self._KNOWN_CITIES.items():
                         if re.search(r'\b' + city_name + r'\b', text, re.IGNORECASE):
                             result["location"] = [city_name.title(), None, country_code]
                             break
