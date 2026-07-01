@@ -149,8 +149,7 @@ class TextParser(BaseParser):
         # 6.5 Extract Location
         loc_patterns = [
             r'(?i)Location\s*:\s*([A-Za-z]+(?:[\s-][A-Za-z]+)*(?:,\s*[A-Za-z]+(?:[\s-][A-Za-z]+)*){0,2})',
-            r'(?i)(?:Currently\s+)?(?:Based|living|Lives)\s+in\s+([A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*(?:,\s*[A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*){0,2})',
-            r'(?i)\bfrom\s+([A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*(?:,\s*[A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*){1,2})'
+            r'(?i)(?:Currently\s+)?(?:Based|living|Lives)\s+in\s+([A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*(?:,\s*[A-Z][a-zA-Z]+(?:[\s-][A-Z][a-zA-Z]+)*){0,2})'
         ]
         extracted_loc = None
         for pat in loc_patterns:
