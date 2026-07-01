@@ -1,6 +1,6 @@
 [
   {
-    "candidate_id": "e41304d3-05a7-4ca7-a474-2edcf9217a95",
+    "candidate_id": "90568d58-04ba-441e-8370-5c80c4c8d847",
     "full_name": "Unknown Candidate",
     "emails": [],
     "phones": [],
@@ -31,7 +31,7 @@
       {
         "source_name": "recruiter_notes.txt",
         "content_type": "txt",
-        "parse_time_ms": 0.49,
+        "parse_time_ms": 0.67,
         "emails_found": 0,
         "phones_found": 0,
         "skills_found": 0,

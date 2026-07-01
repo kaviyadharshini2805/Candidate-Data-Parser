@@ -15,7 +15,9 @@ class TextParser(BaseParser):
         "san francisco": "US", "new york": "US", "london": "GB",
         "los angeles": "US", "chicago": "US", "seattle": "US", "boston": "US",
         "austin": "US", "toronto": "CA", "vancouver": "CA", "sydney": "AU",
-        "melbourne": "AU", "berlin": "DE", "paris": "FR", "tokyo": "JP"
+        "melbourne": "AU", "berlin": "DE", "paris": "FR", "tokyo": "JP",
+        "orlando": "US", "miami": "US", "dallas": "US", "houston": "US",
+        "atlanta": "US", "denver": "US", "seoul": "KR", "singapore": "SG"
     }
 
     def parse(self, payload: RawPayload) -> Dict[str, Any]:
